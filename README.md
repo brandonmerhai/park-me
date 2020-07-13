@@ -10,20 +10,27 @@ Running the app through the simulator built-in with Xcode will load the app and 
 
 This initial Login Screen view is in charge of handling user login, user registration and also provides the opportunity for logging in as an admin.
 1. Admin login is accessed by pressing the custom gear icon in the top right.
+
 	a. Login requires the use of the following account information:
 		[Contact for info for testing]
 
+	
 	b. Logging in will take the user to a separate set of views which will display a table of the parking lots read from the Firestore database.
+		
 		i. Clicking on a cell will reveal all of the registered USERS (through generated user ids to provide anonymity).
 		ii. Swiping on a cell will reveal a delete button that can be pressed to delete that specific entry.
 
 2. User Registration can be accssed by pressing the 'Register now!' button.
+	
 	a. This will perform a segue to a new view which will ask a user to fill out the required fields.
+		
 		i. This requires entering a **valid** email address and a password.
 		ii. Clicking register will authenticate the user through Firebase Authentication.
 
 3. User login is handled by entering your email address and password into the fields and then clicking the login button.
+	
 	a. This will take you to a new set of views that displays a TableView with all available parking lots and a Settings page.
+		
 		i. The TableView displays all the parking lots. Clicking on a specifc lot will take the user to another page which will ask the user to select the time they would like.
 			a. Use the stepper to adjust the time to the amount of time you want and then click Update.
 		ii. The settings page has fields for the user to save their car information.
