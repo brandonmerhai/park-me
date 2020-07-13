@@ -1,4 +1,4 @@
-# ParkingApp
+# ParkingApp / Park.Me
 
 ## Installation
 
@@ -46,10 +46,12 @@ There are two tab bar controllers, one for users and one for admins. They displa
 Navigation is handled through a custom built view that includes a navigation bar and buttons for moving back and forth between views.
 
 Each TableView displays a custom cell. 
+	
 	1. The user TableView displays information about the parking lot, the location and capacity of the lot.
 	2. The admin TableView displays the parking lots and then displays a second tableview on cell click that shows user ids.
 
 Firebase (Firestore) was used as the database.
+		
 		1. There are three collections: user, lot, and admin.
 			a. Admin stores info about the admin account for login.
 			b. User stores user information. Each user has associated with it:
